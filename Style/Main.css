@@ -1,4 +1,10 @@
 header{
     height: 150px;
-    background-color:orange
+    background-color:orange;
+}
+#MyPhoto{
+    float: right;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
 }
