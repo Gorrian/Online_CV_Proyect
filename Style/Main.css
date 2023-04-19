@@ -2,6 +2,9 @@ header{
     height: 150px;
     background-color:orange;
 }
+nav a{
+    text-align: center;
+}
 #MyPhoto{
     float: right;
     width: 200px;
