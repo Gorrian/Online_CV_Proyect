@@ -13,36 +13,98 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Style/Main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 
 <body>
-    <header>
+    <header id="TopOfPage">
+        <div></div>
         <h1 class="align-middle">Bienvenidos a mi autopresentacion</h1>
     </header>
-    <nav>
+    <nav class="sticky-top navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <div class="row">
-                <a class="navbar-brand col">Marcos Gorriaran</a>
-                <a class="col">Placeholder</a>
-                <a class="col">Placeholder</a>
-                <a class="col">Placeholder</a>
-            </div>     
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#TopOfPage">
+                    <img src="Icon/MainIcon.ico" alt="Logo" width="30" height="24"
+                        class="d-inline-block align-text-top">
+                    Marcos
+                </a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <section id="Start">
-        
-        <h2>Introduccion</h2>
-        <img src="Images/PhotoOfMe.jpg" alt="Foto no encontrada 404" id="MyPhoto">
-        <p>
-            Bienvenidos a mi pagina web donde me presento, soy Marcos Gorriaran un joven 
-            de 21 años y deseo participar en el mundo del desarollo de aplicaciones por la
-            gratificacion de hacer programas y algoritmos que sean utiles para otras personas
-            y os agradezco que os tomeis el tiempo de tan siquiera leer esta introduccion sobre mi.
-        </p>
 
+        <h2>Introduccion</h2>
+        <div class="container-fluid">
+            <div class="row">
+                <p class="col-sm-12 col-md-8">
+                    Bienvenidos a mi pagina web donde me presento, soy Marcos Gorriaran un joven
+                    de 21 años y deseo participar en el mundo del desarollo de aplicaciones por la
+                    gratificacion de hacer programas y algoritmos que sean utiles para otras personas
+                    y os agradezco que os tomeis el tiempo de tan siquiera leer esta introduccion sobre mi.
+                </p>
+                <img src="Images/PhotoOfMe.jpg" alt="Foto no encontrada 404" id="MyPhoto"
+                    class="col-sm-5 col-md-4 mx-auto d-block">
+            </div>
+        </div>
     </section>
     <section>
         <h2>Experiencia laboral</h2>
+        <h3>Practicas de trabajo SMX</h3>
+        <ul class="list-group">
+            <a data-bs-toggle="collapse" href="#Responsabilidades" role="button" aria-expanded="false"
+                aria-controls="collapseExample">
+                <li class="list-group-item">
+                    Responsabilidades
+                </li>
+            </a>
+            <div class="collapse" id="Responsabilidades">
+                <div class="card card-body">
+                    Era el responsable de ir a los diferentes centros de la empresa y solucionar las diferentes
+                    incidencias
+                    informaticas que nuestro jefe nos iva informando desde el centro de la central.
+                    Algunas de las tareas que he tenido que hacer para solucionar incidencias incluyen
+                    <ul>
+                        <li>Cambio de piezas defectuosas por unas nuevas en el equipo</li>
+                        <li>Clonaje de discos</li>
+                        <li>Limpieza de equipos</li>
+                        <li>Instalacion de programario y drivers</li>
+                        <li>Documentacion de incidencias</li>
+                        <li>Etiquetado y documentacion de los identificadores de las rosetas por los centros</li>
+                    </ul>
+                    Ademas de hacer las anteriores tareas a la hora de solucionar incidencias, tambien teniamos que
+                    investigar el funcionamiento de programas que nuestro jefe estaba interesado instalar en la red
+                    o en los ordenadores de la empresa.
+                </div>
+            </div>
+            <a data-bs-toggle="collapse" href="#Responsabilidade" role="button" aria-expanded="false"
+                aria-controls="collapseExample">
+                <li class="list-group-item">
+                    Responsabilidades
+
+                </li>
+            </a>
+        </ul>
+        <script>
+        </script>
     </section>
 </body>
 

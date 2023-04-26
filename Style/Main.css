@@ -5,9 +5,11 @@ header{
 nav a{
     text-align: center;
 }
+.collapse .list-group-item:hover{
+    background-color: #a3a3a3;
+}
 #MyPhoto{
-    float: right;
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
+    height: 240px;
+    width: 240px;
+    border-radius: 18px;
 }
