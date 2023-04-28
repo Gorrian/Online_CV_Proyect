@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="Style/Main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="Script/ContactForm.js"></script>
+    <script src="Script/ReadJson.js"></script>
+    <script src="Script/Captcha.js"></script>
 </head>
 <body>
     <!--div class="container">
@@ -29,17 +31,17 @@
             <span id="WarnNombre" class="text-danger"></span>
           </div>
           <div class="mb-3">
-            <label for="Email" class="form-label">Correo electronico</label>
+            <label for="Email" class="form-label">Correo electronico*</label>
             <input type="email" name="Email" class="form-control" id="Email">
             <span id="WarnEmail" class="text-danger"></span>
           </div>
           <div class="mb-3">
-            <label for="Telefono" class="form-label">Telefono</label>
+            <label for="Telefono" class="form-label">Telefono*</label>
             <input type="text" name="Telefono" class="form-control" id="Telefono">
             <span id="WarnTelefono" class="text-danger"></span>
           </div>
           <div class="mb-3">
-            <label for="Fecha" class="form-label">Fecha</label>
+            <label for="Fecha" class="form-label">Fecha*</label>
             <input type="date" name="Fecha" id="Fecha" class="form-control">
             <span id="WarnFecha" class="text-danger"></span>
           </div>
@@ -69,7 +71,13 @@
             <label class="form-check-label" for="GDPR">He leido el documento sobre la <a href="#">ley de proteccion de datos</a></label>
             <span id="WarnGDPR" class="text-danger"></span>
           </div>
-          
+          <div class="mb-3 border col-lg-6 p-3">
+            <h4>Captcha</h4>
+            <label class="form-label m-2" for="Captcha" id="LabelCaptcha"></label><br>
+            <img class="m-2 border" src="" id="ImgCaptcha" height="100" width="150"><br>
+            <input type="text" id="Captcha" class="form-control">
+            <span id="WarnCaptcha" class="text-danger"></span>
+          </div>
           <button type="submit" class="btn btn-primary">Submit</button>
         
     </form>

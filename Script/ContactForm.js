@@ -54,9 +54,22 @@ $(document).ready(function () {
             $("#Telefono").removeClass("border-success");
         }
     });
+
 });
 
 function Validar() {
     let Validado = false;
+    
+    if($("#Captcha").val()==CaptchaAnswer){
+        $("#WarnCaptcha").text("");
+        $("#Captcha").removeClass("border-danger");
+        $("#Captcha").addClass("border-success");
+    }else{
+        $("#WarnCaptcha").text("El captcha introducido es incorrecto");
+        $("#Captcha").addClass("border-danger");
+        $("#Captcha").removeClass("border-success");
+        Validado=false
+    }
+
     return Validado;
 }
