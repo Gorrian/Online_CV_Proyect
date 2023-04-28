@@ -41,7 +41,7 @@
             <span id="WarnTelefono" class="text-danger"></span>
           </div>
           <div class="mb-3">
-            <label for="Fecha" class="form-label">Fecha*</label>
+            <label for="Fecha" class="form-label">Fecha de contacto*</label>
             <input type="date" name="Fecha" id="Fecha" class="form-control">
             <span id="WarnFecha" class="text-danger"></span>
           </div>
@@ -55,20 +55,20 @@
             <textarea name="Descripcion" id="Descripcion" class="form-control" cols="30" rows="10"></textarea>
             <span id="WarnDescripcion" class="text-danger"></span>
           </div>
-          <div class="mb-3">
+          <div id="ContactMethod" class="mb-3">
             <!--
                 Necesito un metodo para contactar con la persona, tengo que forzarle a elegir uno.
             -->
             <label for="ContactMethod" class="form-label">Metodo de contacto*</label><br>
-            <input type="checkbox" name="ContactMethod[]" class="form-check-inline">
+            <input type="checkbox" name="ContactMethod[]" id="ContactMethod0" class="form-check-inline">
             <label for="ContactMethod" class="form-label">Telefono</label><br>
-            <input type="checkbox" name="ContactMethod[]" class="form-check-inline">
-            <label for="ContactMethod" class="form-label">Correo electronico</label>
+            <input type="checkbox" name="ContactMethod[]" id="ContactMethod1" class="form-check-inline">
+            <label for="ContactMethod" class="form-label">Correo electronico</label><br>
             <span id="WarnContactMethod" class="text-danger"></span>
           </div>
           <div class="mb-3 form-check">
             <input type="checkbox" class="form-check-input" id="GDPR">
-            <label class="form-check-label" for="GDPR">He leido el documento sobre la <a href="#">ley de proteccion de datos</a></label>
+            <label class="form-check-label" for="GDPR">He leido el documento sobre la <a href="#">ley de proteccion de datos</a></label><br>
             <span id="WarnGDPR" class="text-danger"></span>
           </div>
           <div class="mb-3 border col-lg-6 p-3">
