@@ -1,10 +1,3 @@
-let NombreVal = false;
-let EmailVal = false;
-let TelefonoVal = false;
-let FechaVal = false;
-let AsuntoVal = false;
-
-
 $(document).ready(function () {
     $("#Nombre").blur(ValidarNombre);
 
