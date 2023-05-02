@@ -6,6 +6,7 @@
 
 $(document).ready(function () {
   let navPos=$("#navbar_top").position()["top"];
+  console.log(navPos);
   window.addEventListener('scroll', function () {
     if (window.scrollY > navPos) {
       document.getElementById('navbar_top').classList.add('fixed-top');
