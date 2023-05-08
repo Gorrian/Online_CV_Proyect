@@ -2,10 +2,53 @@
     {
         "Experiencia laboral":{
             "Practicas de SMX":{
-                "Function":"Resolucion de incidencias",
-                "Responsabilidades":"/Responsabilidades/SMX.txt",
+                "Funcion":"Resolucion de incidencias",
+                "Responsabilidades":[
+                    "Era el responsable de ir a los diferentes centros de la empresa y solucionar las diferentes",
+                    "incidencias",
+                    "informaticas que nuestro jefe nos iva informando desde el centro de la central.",
+                    "Algunas de las tareas que he tenido que hacer para solucionar incidencias incluyen",
+                    "<ul>",
+                    "<li>Cambio de piezas defectuosas por unas nuevas en el equipo</li>",
+                    "<li>Clonaje de discos</li>",
+                    "<li>Limpieza de equipos</li>",
+                    "<li>Instalacion de programario y drivers</li>",
+                    "<li>Documentacion de incidencias</li>",
+                    "<li>Etiquetado y documentacion de los identificadores de las rosetas por los centros</li>",
+                    "</ul>",
+                    "Ademas de hacer las anteriores tareas a la hora de solucionar incidencias, tambien teniamos que",
+                    "investigar el funcionamiento de programas que nuestro jefe estaba interesado instalar en la red",
+                    "o en los ordenadores de la empresa."
+                ],
                 "Lugar de trabajo":"Institut municipal de serveis personals (IMSP)",
                 "Duracion":"5/11/2019 - 27/03/2020"
+            },
+            "Practicas de ASIX":{
+                "Funcion":"Desarollo fullstack",
+                "Responsabilidades":[
+                    "Era el responsable de desarollar las epsecificaciones que mi superior me demandaba.<br>",
+                    "La empresa deseaba mejorar el estilo de la pagina asi que la responsable con la ayuda de ",
+                    "mi y otros estudiantes de mi mismo centro teniamos que desarollar una pagina que optimizara ",
+                    "y se adaptaran a la nueva pagina que se haria con la ayuda de wordpress.<br>",
+                    "Como primer desarollador de entre los chicos de practicas se me responsiblizo en:",
+                    "<ul>",
+                    "<li>Investigar una manera de implementar codigo en wordpress</li>",
+                    "<li>Implementar los viejos aplicativos en el wordpress de la nueva pagina</li>",
+                    "<li>Optimizar los viejos aplicativos</li>",
+                    "<li>Introducir al proyecto a los nuevos desarolladores que entraron despues de mi</li>",
+                    "</ul>",
+                    "Tambien tube que utilizar las siguientes herramientas para efectuar las tareas que se me responsabilizaban:",
+                    "<ul>",
+                    "<li>PHP</li>",
+                    "<li>MySQL</li>",
+                    "<li>ODBC</li>",
+                    "<li>Javascript</li>",
+                    "<li>Visual studio code</li>",
+                    "<li>Wordpress</li>",
+                    "</ul>"
+                ],
+                "Lugar de trabajo":"Institut municipal de serveis personals (IMSP)",
+                "Duracion":"14/03/2022 - 30/06/2022"
             }
         }
     }

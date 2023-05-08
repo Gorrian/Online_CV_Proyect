@@ -18,6 +18,7 @@
     <script src="Script/ReadJson.js"></script>
     <script src="Script/BuildExpLab.js"></script>
 </head>
+
 <body class="justify-content-around">
     <header id="TopOfPage">
         <img src="Images/PhoenixBackground.png" class="img-fluid mx-auto d-block" alt="">
@@ -69,8 +70,12 @@
     <section>
         <h2>Experiencia laboral</h2>
         <h3>Practicas de trabajo SMX</h3>
-        <ul class="list-group">
-            <a data-bs-toggle="collapse" href="#Responsabilidades" role="button" aria-expanded="false"
+        <ul class="list-group" id="SMX">
+            <script>
+                BuildExperiencia("Practicas de SMX", "SMX");
+            </script>
+            <!--
+                <a data-bs-toggle="collapse" href="#Responsabilidades" role="button" aria-expanded="false"
                 aria-controls="collapseExample">
                 <li class="list-group-item list-group-item-action">
                     Responsabilidades
@@ -118,10 +123,16 @@
                 </div>
             </div>
 
+            -->
+
         </ul>
-        <script>
-            
-        </script>
+        <h3>Practicas de trabajo ASIX</h3>
+        <ul class="list-group" id="ASIX">
+            <script>
+                BuildExperiencia("Practicas de ASIX", "ASIX");
+            </script>
+        </ul>
+        
     </section>
 </body>
 
