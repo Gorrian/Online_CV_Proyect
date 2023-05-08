@@ -20,7 +20,7 @@ function BuildExperiencia(Trabajo, ID) {
             Result+=("</li>");
             Result+=("</a>");
             Result+=("<div class=\"collapse\" id=\""+ID+AttrID+"\">");
-            Result+=("<div class=\"card card-body\">");
+            Result+=("<div class=\"card card-body mb-4\">");
             Result+=(Element);
             Result+=("</div>");
             Result+=("</div>");
