@@ -83,15 +83,15 @@
         "Idiomas":{
             "Español":{
                 "Nivel": "Nativo",
-                "Imagen":"Images/Spanish"
+                "Imagen":"Images/Spanish.png"
             },
             "Catalan":{
                 "Nivel":"Alto",
-                "Imagen":"Images/Catalan"
+                "Imagen":"Images/Catalan.png"
             },
             "Ingles":{
                 "Nivel":"Advance B2",
-                "Imagen":"Images/E"
+                "Imagen":"Images/English.png"
             }
         },
         "Cualidades":[
