@@ -1,5 +1,22 @@
 [
     {
+        "Nombres":"Marcos Facundo",
+        "Apellidos":"Gorriaran Caamaño",
+        "Contacto":{
+            "Localidad":"Barcelona",
+            "Telefono":"+34665251325",
+            "Correo electronico":"gorriansan@hotmail.com"
+        },
+        "Links de referencia":{
+            "Github":{
+                "URL":"https://github.com/Gorrian",
+                "Image":"Images/Github"
+            },
+            "Linkedin":{
+                "URL":"https://es.linkedin.com/in/marcos-gorriaran",
+                "Images":"Images/Linkedin"
+            }
+        },
         "Experiencia laboral":{
             "Practicas de SMX":{
                 "Funcion":"Resolucion de incidencias",
@@ -50,6 +67,42 @@
                 "Lugar de trabajo":"Institut municipal de serveis personals (IMSP)",
                 "Duracion":"14/03/2022 - 30/06/2022"
             }
-        }
+        },
+        "Formacion":{
+            "Ciclo formativo grado superior":[
+                "Administracion de sistemas informaticos en red con perfil de ciberseguridad"
+            ],
+            "Ciclo formativo grado medio":[
+                "Sistemas microinformaticos en red"
+            ],
+            "Titulaciones Microsoft office specialist":[
+                "MOS PowerPoint 2016",
+                "MOS Word 2016"
+            ]
+        },
+        "Idiomas":{
+            "Español":{
+                "Nivel": "Nativo",
+                "Imagen":"Images/Spanish"
+            },
+            "Catalan":{
+                "Nivel":"Alto",
+                "Imagen":"Images/Catalan"
+            },
+            "Ingles":{
+                "Nivel":"Advance B2",
+                "Imagen":"Images/E"
+            }
+        },
+        "Cualidades":[
+            "Atención a los detalles",
+            "Perseverancia",
+            "Capacidad analitica",
+            "Creativo",
+            "Autodidacto",
+            "Sentido de la responsabilidad",
+            "Toma de decisiones",
+            "Resolutivo"
+        ]
     }
 ]
