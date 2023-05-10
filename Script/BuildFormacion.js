@@ -1,15 +1,23 @@
-function BuildExperiencia(Trabajo, ID) {
+function PrpeareFormacionBuild(ID,SectionID){
+    $("#"+SectionID).append("<ul id='"+ID+"' class='list-group'>");
+}
+
+
+
+function BuildFormacion(Formacion, ID) {
     readTextFile("/CV_Information.json", function (text) {
-        let data = JSON.parse(text)[0]["Experiencia laboral"][Trabajo];
+        let data = JSON.parse(text)[0][Formacion];
         let Listado=document.getElementById(ID);
         let Result="";
         for (const key in data) {
             let Element=data[key];
             if (Array.isArray(Element)) {
                 let TempElement="";
+                TempElement+="<ul>"
                 Element.forEach(element => {
-                    TempElement+=element;
+                    TempElement+="<li>"+element+"</li>";
                 });
+                TempElement+="</ul>"
                 Element=TempElement;
             }
 
@@ -21,7 +29,9 @@ function BuildExperiencia(Trabajo, ID) {
             Result+=("</a>");
             Result+=("<div class=\"collapse\" id=\""+ID+AttrID+"\">");
             Result+=("<div class=\"card card-body mb-4 ms-4\">");
+            Result+=("<ul class=\"LiSinForma\">");
             Result+=(Element);
+            Result+=("</ul>");
             Result+=("</div>");
             Result+=("</div>");
             
@@ -34,4 +44,3 @@ function BuildExperiencia(Trabajo, ID) {
         Listado.innerHTML=Result;
     });
 }
-//BuildExperiencia("Practicas de SMX", "Something");
