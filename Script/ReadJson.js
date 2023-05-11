@@ -1,3 +1,9 @@
+
+/**
+ * Esta funcion se encarga de leer cualquier archivo json para despues
+ * ser tratado por cualquier otra funcionalidad que requiera de la informacion
+ * de los JSON que tiene la pagina
+ */
 function readTextFile(file, callback) {
     var rawFile = new XMLHttpRequest();
     rawFile.overrideMimeType("application/json");

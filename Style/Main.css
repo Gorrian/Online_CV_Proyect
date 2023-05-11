@@ -3,23 +3,26 @@
     src: url("../Fonts/Comme/Comme-VariableFont_wght.ttf") format("truetype");
 }
 :root{
+    --header-bg-color: orange;
     --footer-bg-color:#4d4d4d;
+    --footer-text-color:white;
+    --Selected-List-bg-color: #a3a3a3;
 }
 *{
     font-family: Comme, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 header{
-    background-color:orange;
+    background-color:var(--header-bg-color);
 }
 nav a{
     text-align: center;
 }
 .collapse .list-group-item:hover{
-    background-color: #a3a3a3;
+    background-color: var(--Selected-List-bg-color);
 }
 footer, footer *{
     background-color: var(--footer-bg-color);
-    color: white;
+    color: var(--footer-text-color);
 }
 #MyPhoto{
     height: 240px;

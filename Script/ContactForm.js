@@ -1,3 +1,9 @@
+/**
+ * Todas estas funciones se encargan de validar los diferentes apartados
+ * del formulario de contacto y asi asegurarse de que cumplan con las 
+ * condiciones establecidas.
+ */
+
 $(document).ready(function () {
     $("#Nombre").blur(ValidarNombre);
 
