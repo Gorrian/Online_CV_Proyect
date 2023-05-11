@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Comme";
-    src: url("/Fonts/Comme/Comme-VariableFont_wght.ttf") format("truetype");
+    src: url("../Fonts/Comme/Comme-VariableFont_wght.ttf") format("truetype");
 }
 :root{
     --footer-bg-color:#4d4d4d;

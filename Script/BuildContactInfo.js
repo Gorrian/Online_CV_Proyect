@@ -1,5 +1,5 @@
 function BuildContactInfo (ContactInfo, ID){
-    readTextFile("/CV_Information.json", function (text) {
+    readTextFile("CV_Information.json", function (text) {
         let data = JSON.parse(text)[0][ContactInfo];
         let Listado=document.getElementById(ID);
         let Result="<h3>Informacion de contacto</h3>";

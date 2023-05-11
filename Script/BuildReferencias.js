@@ -1,5 +1,5 @@
 function BuildReferencias (Referencias, ID){
-    readTextFile("/CV_Information.json", function (text) {
+    readTextFile("CV_Information.json", function (text) {
         let data = JSON.parse(text)[0][Referencias];
         let Listado=document.getElementById(ID);
         let Result="<h3>Paginas referentes</h3>";
