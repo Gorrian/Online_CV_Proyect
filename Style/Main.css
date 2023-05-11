@@ -8,12 +8,21 @@
     --footer-text-color:white;
     --Selected-List-bg-color: #a3a3a3;
 }
+@keyframes Spin{
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
 *{
     font-family: Comme, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 header{
     background-color:var(--header-bg-color);
 }
+
 nav a{
     text-align: center;
 }
