@@ -20,6 +20,8 @@
     <script src="Script/BuildFormacion.js"></script>
     <script src="Script/BuildIdiomas.js"></script>
     <script src="Script/BuildCualidades.js"></script>
+    <script src="Script/Captcha.js"></script>
+    <script src="Script/ContactForm.js"></script>
 </head>
 
 <body class="justify-content-around">
@@ -92,8 +94,8 @@
     <section id="Formacion">
         <h2>Formaciones</h2>
         <script>
-            PrpeareFormacionBuild("Formaciones","Formacion");
-            BuildFormacion("Formacion","Formaciones");
+            PrpeareFormacionBuild("Formaciones", "Formacion");
+            BuildFormacion("Formacion", "Formaciones");
         </script>
     </section>
     <section id="Idiomas">
@@ -101,7 +103,7 @@
         <div class="container-fluid">
             <div class="row" id="ListIdiomas">
                 <script>
-                    BuildIdiomas("Idiomas","ListIdiomas");
+                    BuildIdiomas("Idiomas", "ListIdiomas");
                 </script>
             </div>
         </div>
@@ -110,9 +112,72 @@
         <h2>Cualidades</h2>
         <ul class="list-group list-group-flush" id="Cualidades">
             <script>
-                BuildCUalidades("Cualidades","Cualidades");
+                BuildCUalidades("Cualidades", "Cualidades");
             </script>
         </ul>
+    </section>
+    <section id="Contacto">
+
+        <h2>Contactame</h2>
+        <p>Rellene la informacion en el documento para contactarme.</p>
+        <form action="ContactForm.html" onsubmit="return Validar()" method="post" class="m-5">
+            <div class="mb-3">
+                <label for="Nombre" class="form-label">Nombre*</label>
+                <input type="text" name="Nombre" class="form-control" id="Nombre">
+                <span id="WarnNombre" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label for="Email" class="form-label">Correo electronico*</label>
+                <input type="email" name="Email" class="form-control" id="Email">
+                <span id="WarnEmail" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label for="Telefono" class="form-label">Telefono*</label>
+                <input type="text" name="Telefono" class="form-control" id="Telefono">
+                <span id="WarnTelefono" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label for="Fecha" class="form-label">Fecha de contacto*</label>
+                <input type="date" name="Fecha" id="Fecha" class="form-control">
+                <span id="WarnFecha" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label for="Asunto" class="form-label">Asunto*</label>
+                <input type="text" name="Asunto" id="Asunto" class="form-control">
+                <span id="WarnAsunto" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label for="Descripcion" class="form-label">Descripcion</label>
+                <textarea name="Descripcion" id="Descripcion" class="form-control" cols="30" rows="10"></textarea>
+                <span id="WarnDescripcion" class="text-danger"></span>
+            </div>
+            <div id="ContactMethod" class="mb-3">
+                <!--
+                Necesito un metodo para contactar con la persona, tengo que forzarle a elegir uno.
+            -->
+                <label for="ContactMethod" class="form-label">Metodo de contacto*</label><br>
+                <input type="checkbox" name="ContactMethod[]" id="ContactMethod0" class="form-check-inline">
+                <label for="ContactMethod" class="form-label">Telefono</label><br>
+                <input type="checkbox" name="ContactMethod[]" id="ContactMethod1" class="form-check-inline">
+                <label for="ContactMethod" class="form-label">Correo electronico</label><br>
+                <span id="WarnContactMethod" class="text-danger"></span>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="GDPR">
+                <label class="form-check-label" for="GDPR">He leido el documento sobre la <a href="#">ley de proteccion
+                        de datos</a></label><br>
+                <span id="WarnGDPR" class="text-danger"></span>
+            </div>
+            <div class="mb-3 border col-lg-6 p-3">
+                <h4>Captcha</h4>
+                <label class="form-label m-2" for="Captcha" id="LabelCaptcha"></label><br>
+                <img class="m-2 border" src="" id="ImgCaptcha" height="100" width="150"><br>
+                <input type="text" id="Captcha" class="form-control">
+                <span id="WarnCaptcha" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+        </form>
     </section>
 </body>
 
