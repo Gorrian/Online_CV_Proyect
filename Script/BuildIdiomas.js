@@ -5,27 +5,18 @@ function BuildIdiomas(Idiomas, ID) {
         let Result="";
         for (const key in data) {
             let Element=data[key];
-            console.log(Element);
-
             let AttrID=key.replace(/ /g,"_");
 
-            Result+=("<a data-bs-toggle=\"collapse\" href=\"#"+ID+AttrID+"\" role=\"button\" aria-expanded=\"false\" aria-controls=\"collapseExample\">");
-            Result+=("<li class=\"list-group-item list-group-item-action\">"+key);
-            Result+=("</li>");
-            Result+=("</a>");
-            Result+=("<div class=\"collapse\" id=\""+ID+AttrID+"\">");
-            Result+=("<div class=\"card card-body mb-4 ms-4\">");
-            Result+=(Element);
-            Result+=("</div>");
-            Result+=("</div>");
-            
+            Result+='<div class="col-sm-12 col-md-4">';
+            Result+='<img class="img-thumbnail" height="250" width="250" src="'+data[key]["Imagen"]+'" alt="Imagen no cargada o encontrada">';
+            Result+='<figcaption>'+data[key]["Nivel"]+'</figcaption>'
+            Result+='</div>'
            
 
 
             
         }
         
-        //Listado.innerHTML=Result;
+        Listado.innerHTML=Result;
     });
 }
-BuildIdiomas("Idiomas","SOmething")

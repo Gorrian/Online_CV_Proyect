@@ -19,6 +19,7 @@
     <script src="Script/BuildExpLab.js"></script>
     <script src="Script/BuildFormacion.js"></script>
     <script src="Script/BuildIdiomas.js"></script>
+    <script src="Script/BuildCualidades.js"></script>
 </head>
 
 <body class="justify-content-around">
@@ -48,7 +49,10 @@
                         <a class="nav-link" href="#Formacion">Formaciones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#Idiomas">Idiomas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Transversales">Cualidades</a>
                     </li>
                 </ul>
             </div>
@@ -95,21 +99,20 @@
     <section id="Idiomas">
         <h2>Idiomas</h2>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-12 col-md-4">
-                    <img class="img-thumbnail" height="250" width="250" src="Images/Spanish.png" alt="Imagen no cargada o encontrada">
-                    <figcaption>Nativo</figcaption>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <img class="img-thumbnail" height="250" width="250" src="Images/Spanish.png" alt="Imagen no cargada o encontrada">
-                    <figcaption>Nativo</figcaption>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <img class="img-thumbnail" height="250" width="250" src="Images/Spanish.png" alt="Imagen no cargada o encontrada">
-                    <figcaption>Nativo</figcaption>
-                </div>
+            <div class="row" id="ListIdiomas">
+                <script>
+                    BuildIdiomas("Idiomas","ListIdiomas");
+                </script>
             </div>
         </div>
+    </section>
+    <section id="Transversales">
+        <h2>Cualidades</h2>
+        <ul class="list-group list-group-flush" id="Cualidades">
+            <script>
+                BuildCUalidades("Cualidades","Cualidades");
+            </script>
+        </ul>
     </section>
 </body>
 
