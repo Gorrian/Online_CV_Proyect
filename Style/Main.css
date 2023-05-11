@@ -2,6 +2,9 @@
     font-family: "Comme";
     src: url("/Fonts/Comme/Comme-VariableFont_wght.ttf") format("truetype");
 }
+:root{
+    --footer-bg-color:#4d4d4d;
+}
 *{
     font-family: Comme, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -14,13 +17,21 @@ nav a{
 .collapse .list-group-item:hover{
     background-color: #a3a3a3;
 }
+footer, footer *{
+    background-color: var(--footer-bg-color);
+    color: white;
+}
 #MyPhoto{
     height: 240px;
     width: 240px;
     border-radius: 18px;
 }
 #ListIdiomas img{
-    height: 150px;
-    width: 250px;
+    height: 90px;
+    width: 140px;
     border-radius: 18px;
+}
+#ReferenciasWeb img{
+    height: 50px;
+    width: 50px;
 }

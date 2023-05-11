@@ -10,11 +10,11 @@
         "Links de referencia":{
             "Github":{
                 "URL":"https://github.com/Gorrian",
-                "Image":"Images/Github"
+                "Image":"Images/Github.png"
             },
             "Linkedin":{
                 "URL":"https://es.linkedin.com/in/marcos-gorriaran",
-                "Images":"Images/Linkedin"
+                "Image":"Images/Linkedin.ico"
             }
         },
         "Experiencia laboral":{

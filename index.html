@@ -20,6 +20,8 @@
     <script src="Script/BuildFormacion.js"></script>
     <script src="Script/BuildIdiomas.js"></script>
     <script src="Script/BuildCualidades.js"></script>
+    <script src="Script/BuildContactInfo.js"></script>
+    <script src="Script/BuildReferencias.js"></script>
     <script src="Script/Captcha.js"></script>
     <script src="Script/ContactForm.js"></script>
 </head>
@@ -55,6 +57,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#Transversales">Cualidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -120,7 +125,7 @@
 
         <h2>Contactame</h2>
         <p>Rellene la informacion en el formulario para contactarme si lo desea.</p>
-        <form action="ContactForm.html" onsubmit="return Validar()" method="post" class="m-5">
+        <form action="ContactForm.html" onsubmit="return Validar()" method="post" class="m-5 mt-0">
             <div class="mb-3">
                 <label for="Nombre" class="form-label">Nombre*</label>
                 <input type="text" name="Nombre" class="form-control" id="Nombre">
@@ -179,6 +184,24 @@
 
         </form>
     </section>
+    <footer>
+        <table>
+            <div class="container-fluid">
+                <div class="row d-flex justify-content-around">
+                    <div class="col-md-6 col-sm-12" id="ContactInfo">
+                        <script>
+                            BuildContactInfo("Contacto","ContactInfo");
+                        </script>
+                    </div>
+                    <div class="col-md-6 col-sm-12" id="ReferenciasWeb">
+                        <script>
+                            BuildReferencias("Links de referencia","ReferenciasWeb");
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </table>
+    </footer>
 </body>
 
 </html>
