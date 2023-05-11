@@ -1,5 +1,5 @@
 function BuildIdiomas(Idiomas, ID) {
-    readTextFile("/CV_Information.json", function (text) {
+    readTextFile("CV_Information.json", function (text) {
         let data = JSON.parse(text)[0][Idiomas];
         let Listado=document.getElementById(ID);
         let Result="";

@@ -1,5 +1,5 @@
 function BuildExperiencia(Trabajo, ID) {
-    readTextFile("/CV_Information.json", function (text) {
+    readTextFile("CV_Information.json", function (text) {
         let data = JSON.parse(text)[0]["Experiencia laboral"][Trabajo];
         let Listado=document.getElementById(ID);
         let Result="";

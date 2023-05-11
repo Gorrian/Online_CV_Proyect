@@ -1,12 +1,12 @@
 [
     {
         "Pregunta":"Escribe lo que vea en la imagen",
-        "Imagen":"/Images/Captcha/evitar-captcha.jpg",
+        "Imagen":"Images/Captcha/evitar-captcha.jpg",
         "Respuesta":"qGphJD"
     },
     {
         "Pregunta":"Escribe lo que vea en la imagen",
-        "Imagen":"/Images/Captcha/v7b3L.png",
+        "Imagen":"Images/Captcha/v7b3L.png",
         "Respuesta":"upord"
     }
 ]

@@ -1,5 +1,5 @@
 function BuildCUalidades(Cualidades, ID) {
-    readTextFile("/CV_Information.json", function (text) {
+    readTextFile("CV_Information.json", function (text) {
         let data = JSON.parse(text)[0][Cualidades];
         let Listado=document.getElementById(ID);
         let Result="";
