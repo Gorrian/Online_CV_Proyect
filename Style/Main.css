@@ -68,7 +68,7 @@ footer, footer *{
 #MyPhoto:hover{
     animation: Spin;
     animation-duration: 500ms;
-    animation-iteration-count: 10;
+    animation-iteration-count: 99;
     animation-delay: 10000ms;
 }
 #ListIdiomas img{
