@@ -26,6 +26,12 @@
 body{
     background-color: var(--Dynamic-bg-Color);
 }
+h2{
+    margin-top: 40px;
+}
+h3{
+    margin-top: 15px;
+}
 section{
     background-color: var(--Dynamic-bg-Color);
     color: var(--Dynamic-Text-Color);
