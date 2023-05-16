@@ -7,6 +7,10 @@
     --footer-bg-color:#4d4d4d;
     --footer-text-color:white;
     --Selected-List-bg-color: #a3a3a3;
+    --Dynamic-bg-Color:White;
+    --Dynamic-Text-Color:black;
+    --Dynamic-Border-Color:#DEE2E6;
+    --Dynamic-Hover-Color:#D0D0D7;
 }
 @keyframes Spin{
     from {
@@ -18,6 +22,23 @@
 }
 *{
     font-family: Comme, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background-color: var(--Dynamic-bg-Color);
+}
+section{
+    background-color: var(--Dynamic-bg-Color);
+    color: var(--Dynamic-Text-Color);
+    border-color: var(--Dynamic-Border-Color);
+}
+.list-group-item, .card-body{
+    background-color: var(--Dynamic-bg-Color);
+    color: var(--Dynamic-Text-Color);
+    border-color: var(--Dynamic-Border-Color);
+}
+.list-group-item-action:hover{
+    background-color: var(--Dynamic-Hover-Color);
+    color: var(--Dynamic-Text-Color);
 }
 header{
     background-color:var(--header-bg-color);
@@ -38,6 +59,12 @@ footer, footer *{
     width: 240px;
     border-radius: 18px;
 }
+#MyPhoto:hover{
+    animation: Spin;
+    animation-duration: 500ms;
+    animation-iteration-count: 10;
+    animation-delay: 10000ms;
+}
 #ListIdiomas img{
     height: 90px;
     width: 140px;
@@ -46,4 +73,7 @@ footer, footer *{
 #ReferenciasWeb img{
     height: 50px;
     width: 50px;
+}
+#ThemeButton{
+    border-radius: 15%;
 }

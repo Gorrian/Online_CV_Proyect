@@ -25,6 +25,7 @@
     <script src="Script/Captcha.js"></script>
     <script src="Script/ContactForm.js"></script>
     <script src="Script/Clock.js"></script>
+    <script src="Script/ChangeTheme.js"></script>
 </head>
 
 <body class="justify-content-around">
@@ -66,13 +67,22 @@
                         <a class="nav-link" href="Curriculum_V1_2.pdf" target="_blank">CV en PDF</a>
                     </li>
                 </ul>
-                
-                <button>Change theme</button>
-                <p id="Clock" class="m-3">
-                    <script>
-                        clock();
-                    </script>
-                </p>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <button id="ThemeButton" class="btn-secondary">Change theme</button>
+                        </div>
+                        <div class="col-lg-8">
+                            <p id="Clock" class="m-lg-3">
+                                <script>
+                                    clock();
+                                </script>
+                            </p>
+                        </div>
+                        
+                        
+                        
+                    </div>
+
             </div>
         </div>
     </nav>
@@ -201,12 +211,12 @@
                 <div class="row d-flex justify-content-around">
                     <div class="col-md-6 col-sm-12" id="ContactInfo">
                         <script>
-                            BuildContactInfo("Contacto","ContactInfo");
+                            BuildContactInfo("Contacto", "ContactInfo");
                         </script>
                     </div>
                     <div class="col-md-6 col-sm-12" id="ReferenciasWeb">
                         <script>
-                            BuildReferencias("Links de referencia","ReferenciasWeb");
+                            BuildReferencias("Links de referencia", "ReferenciasWeb");
                         </script>
                     </div>
                 </div>
