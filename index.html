@@ -25,6 +25,7 @@
     <script src="Script/ContactForm.js"></script>
     <script src="Script/Clock.js"></script>
     <script src="Script/ChangeTheme.js"></script>
+    <script src="Script/Bayblade.js"></script>
 </head>
 
 <body class="justify-content-around">
@@ -66,21 +67,21 @@
                         <a class="nav-link" href="Curriculum_V1_2.pdf" target="_blank">CV en PDF</a>
                     </li>
                 </ul>
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <button id="ThemeButton" class="btn-secondary">Change theme</button>
-                        </div>
-                        <div class="col-lg-8">
-                            <p id="Clock" class="m-lg-3">
-                                <script>
-                                    clock();
-                                </script>
-                            </p>
-                        </div>
-                        
-                        
-                        
+                <div class="row">
+                    <div class="col-lg-4">
+                        <button id="ThemeButton" class="btn-secondary">Change theme</button>
                     </div>
+                    <div class="col-lg-8">
+                        <p id="Clock" class="m-lg-3">
+                            <script>
+                                clock();
+                            </script>
+                        </p>
+                    </div>
+
+
+
+                </div>
 
             </div>
         </div>
@@ -97,6 +98,7 @@
                 </p>
                 <img src="Images/PhotoOfMe.jpg" alt="Foto no encontrada 404" id="MyPhoto"
                     class="col-sm-5 col-md-4 mx-auto d-block">
+                <img src="" alt="">
             </div>
         </div>
     </section>
@@ -189,7 +191,8 @@
             </div>
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="GDPR">
-                <label class="form-check-label" for="GDPR">He leido el documento sobre la <a href="GDPR.pdf" target="_blank">ley de proteccion
+                <label class="form-check-label" for="GDPR">He leido el documento sobre la <a href="GDPR.pdf"
+                        target="_blank">ley de proteccion
                         de datos</a></label><br>
                 <span id="WarnGDPR" class="text-danger"></span>
             </div>
