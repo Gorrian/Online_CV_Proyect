@@ -5,7 +5,7 @@ let CaptchaAnswer="";
  * del json Captchas.json
  */
 $(document).ready(function () {
-    readTextFile("/Captchas.json", function(text){
+    readTextFile("Captchas.json", function(text){
         let data = JSON.parse(text);
         let ChosenCaptcha = data[Math.floor(Math.random() * data.length)];
         $("#LabelCaptcha").text(ChosenCaptcha["Pregunta"]);
