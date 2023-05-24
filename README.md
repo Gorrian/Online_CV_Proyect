@@ -12,3 +12,11 @@ Para instalar la extension de live server debera ir al apartado plugins en el pr
 Luego pege lo siguiente en el buscador de plugins que se le debe de haber abierto:
 - ritwickdey.LiveServer
 Las instrucciones de uso deberia encontrarlo en la pagina del plugin cuando lo selecciono y con eso deberia poder abrir index.html.
+## Tecnologias utilizadas
+Aqui hay un listado de las tecnologias empleadas para efectuar la pagina.
+- HTML
+- CSS
+- Javascript
+- JQuery
+- Bootstrap
+- JSON
